@@ -414,6 +414,7 @@ function App() {
                                     <th>Start Date</th>
                                     <th>End Date</th>
                                     <th>Duration</th>
+                                    <th>Vendor</th>
                                     <th>Crashing/Expediting</th>
                                 </tr>
                             </thead>
@@ -424,6 +425,7 @@ function App() {
                                         <td>{details[0]}</td>
                                         <td>{details[3]}</td>
                                         <td>{details[3] - details[0]} days</td>
+                                        <td>{details[1]}</td>
                                         <td className={details[2] > 0 ? 'crashing' : 'no-crashing'}>
                                             {details[2] > 0 ? `${details[2]} day(s)` : 'No'}
                                         </td>
