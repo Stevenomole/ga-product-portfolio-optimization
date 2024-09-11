@@ -354,7 +354,7 @@ class GeneticAlgorithm:
 
         for module in self.module_profile.keys():
             # Get the column for the current module (successor)
-            flow_values = self.information_flow[module]
+            flow_values = self.information_flow.loc[module]
 
             # Find the maximum flow affecting the module (ignoring NaN values)
             max_flow = flow_values.max()
